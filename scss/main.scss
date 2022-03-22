@@ -1,0 +1,39 @@
+/* ==========================================================================
+  Stylesheet for Smart
+  ITCSS + BEM
+  ---
+  This SCSS code is inspired by BEM (Block Element Modifier) and ITCSS (Inverted Triangle CSS) methodologies.
+  For BEM Please refer to http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+  For ITCSS Please refer to https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+   ========================================================================== */
+
+
+/* Settings: preprocessor variables, colors, global settings
+   ========================================================================== */
+
+@import "_br-variables-override";
+@import "_s-colors";
+@import "_s-fonts";
+@import "_s-variables";
+@import "_c-pagination";
+@import "_c-pagination-simple";
+@import "_icon-font";
+@import "_o-svg-icon";
+@import "_c-input-with-icon";
+@import "_c-input";
+@import "_o-form-group";
+
+/* Generic: CSS reset, box-sizing, global CSS tweaks
+   ========================================================================== */
+
+@import "_reset";
+
+/* Elements: element selectors, CMS-generated content
+   ========================================================================== */
+
+@import "_e-base";
+
+/* Public websites styles 
+  ========================================================================== */
+
+@import "publicwebsite_styles";

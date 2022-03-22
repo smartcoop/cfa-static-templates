@@ -1,0 +1,44 @@
+.body-page {
+  text-align: center;
+}
+
+.page {
+  margin: 0 auto;
+}
+
+.header .header-band {
+  background: #dddddd;
+}
+.header .header-band a {
+  color: #ffffff;
+}
+.header .header-nav {
+  background: #eeeeee;
+  text-align: left;
+}
+.header .header-nav .header-nav__item {
+  border: 1px solid white;
+  display: inline;
+}
+.header .header-nav .header-nav__item .header-nav__logo {
+  max-width: 15rem;
+  height: auto;
+}
+.header .header-nav .header-nav__item a.header-nav__link {
+  color: #ffffff;
+  border: 1px solid white;
+  display: inline-block;
+  margin-bottom: 10rem;
+  padding-right: 3rem;
+}
+.header .header-nav .header-nav__item .header-nav__link:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.main {
+  border-bottom: 2px solid #ffffff;
+}
+
+.footer {
+  border-bottom: 2px solid #ffffff;
+}

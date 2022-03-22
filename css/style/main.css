@@ -1,0 +1,253 @@
+/* ==========================================================================
+  Stylesheet for Smart
+  ITCSS + BEM
+  ---
+  This SCSS code is inspired by BEM (Block Element Modifier) and ITCSS (Inverted Triangle CSS) methodologies.
+  For BEM Please refer to http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
+  For ITCSS Please refer to https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+   ========================================================================== */
+/* Settings: preprocessor variables, colors, global settings
+   ========================================================================== */
+/* ==========================================================================
+  Colors
+  Only define colors here. Don't use sass color functions, stick to hex values,
+  or the color component in styleguide won't regenerate automatically anymore.
+ ========================================================================== */
+/* Base
+ ========================================================================== */
+/* Reds
+ ========================================================================== */
+/* Yellows
+========================================================================== */
+/* Greens
+ ========================================================================== */
+/* Blues
+ ========================================================================== */
+/* Semantic colors
+ ========================================================================== */
+/* ==========================================================================
+  Fonts
+ ========================================================================== */
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-ui-regular.woff2") format("woff2"), url("../fonts/inter-ui-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-ui-medium.woff2") format("woff2"), url("../fonts/inter-ui-medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-ui-semibold.woff2") format("woff2"), url("../fonts/inter-ui-semibold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-ui-bold.woff2") format("woff2"), url("../fonts/inter-ui-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Inter UI";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter-ui-extrabold.woff2") format("woff2"), url("../fonts/inter-ui-extrabold.woff") format("woff");
+}
+/* ==========================================================================
+   Variables
+   ---
+   Global SCSS variables (override default values defined in component files)
+   ========================================================================== */
+/* Typography
+   ========================================================================== */
+/* Colors
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Z-index stack
+   ========================================================================== */
+/* Bars
+   ========================================================================== */
+/* General
+   ========================================================================== */
+/* Form groups
+   ========================================================================== */
+/* Button overrides
+   ========================================================================== */
+/* Generic: CSS reset, box-sizing, global CSS tweaks
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Elements: element selectors, CMS-generated content
+   ========================================================================== */
+/* ==========================================================================
+   Elements: Base
+   ---
+   Only use elements without selectors when really necessary.
+   ========================================================================== */
+/* Elements
+   ========================================================================== */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 54.16%;
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 58.33%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #333333;
+  background: #FFF;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+a {
+  color: #1267FB;
+  text-decoration: none;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+/* Required fields
+   ========================================================================== */
+abbr[title] {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/* Public websites styles 
+  ========================================================================== */
+.body-page {
+  text-align: center;
+}
+
+.page {
+  margin: 0 auto;
+}
+
+.header .header-band {
+  background: #1267FB;
+}
+.header .header-band a {
+  color: #1267FB;
+}
+.header .header-nav {
+  background: #1267FB;
+  text-align: left;
+}
+.header .header-nav .header-nav__logo {
+  max-width: 15rem;
+  height: auto;
+}
+.header .header-nav .header-nav__item {
+  border: 1px solid white;
+  display: inline;
+}
+.header .header-nav .header-nav__item a.header-nav__link {
+  color: #FFFFFF;
+  border: 1px solid white;
+  display: inline-block;
+  margin-bottom: 10rem;
+  padding-right: 3rem;
+}
+.header .header-nav .header-nav__item .header-nav__link:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.main {
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.footer {
+  border-bottom: 2px solid #FFFFFF;
+}/*# sourceMappingURL=main.css.map */

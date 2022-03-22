@@ -1,0 +1,380 @@
+.body-page {
+    text-align: center;
+    background: $color-gray-100;
+}
+
+.page {
+    border: 1vmax solid #FFF;
+    margin: 0 auto;
+    background: $color-white;
+    @media (min-width: $g-bp1) {
+        max-width: $g-bp1;
+    }
+    @media (min-width: $g-bp2) {
+        max-width: $g-bp2;
+    }
+    @media (min-width: $g-bp3) {
+        max-width: $g-bp3;
+    }
+    @media (min-width: $g-bp4) {
+        max-width: $g-bp4;
+    }
+}
+
+.header {
+    .header-band {
+        background: $color-semantic-error;
+        padding: 0.3rem;
+        a {
+            color: $color-white;
+        }
+    }
+    .header-nav {
+        display: flex;
+        background: $color-semantic-link;
+        text-align: left;
+        padding-left: 0.5rem;
+        .header-nav__logo {
+            max-width: 15rem;
+            height: auto;
+        }
+        .header-nav__ul {
+            padding-top: 2.6rem;
+            padding-left: 6rem;
+        }
+        .header-nav__item {
+            display: inline;
+            padding-right: 3rem;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            .header-nav__link {
+                color: $color-white;
+                display: inline-block;
+                width: auto;
+            }
+            .header-nav__link:hover {
+                border-bottom: 2px solid $color-white;
+            }
+        }
+    }
+}
+
+.main {
+    padding: 5rem 10%;
+    text-align: center;
+    .main-title {
+        font-size: 3.2rem;
+        font-weight: 700;
+        line-height: 3.8rem;
+    }
+    .main-subtitle {
+        font-size: 2.4rem;
+        line-height: 6.2rem;
+    }
+    .main__presentation {
+        .main__presentation-txt {
+            padding: 3.6rem 0;
+            font-size: 1.7rem;
+            line-height: 1.9rem;
+            text-align: left;
+        }
+    }
+    .main__contact-form {
+        width: 80%;
+        padding: 2rem 10rem;
+        text-align: left;
+    }
+    .section__label {
+        font-size: 2.4rem;
+        line-height: 6.2rem;
+    }
+    .sectors-icon {
+        margin-top: 1rem;
+        padding-right: 0.4rem;
+        vertical-align: bottom;
+        color: #ff0000 !important;
+    }
+    .chevron-icon {
+        vertical-align: middle;
+        margin-bottom: 0.25rem;
+    }
+    /*Styles for training list*/
+    .c-input--max-width {
+        @media (min-width: $g-bp3) {
+            max-width: 100%;
+        }
+    }
+    .search-category__list {
+        max-width: 70%;
+        margin: 4rem auto;
+        .search-category__list-ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .search-category__item {
+            margin: 0 1rem 1rem 0;
+            border: 0.1rem solid $color-gray-800;
+            width: auto;
+            text-align: center;
+        }
+        .search-category__item-link {
+            padding: 0.5rem 1.6rem 0.5rem 1.2rem;
+            font-size: 1.3rem;
+            color: $color-gray-800;
+        }
+    }
+    .search-category__item:hover {
+        background: $color-blue-600;
+        color: $color-white;
+        border: 0.1rem solid $color-blue-600;
+    }
+    .search-category__item-link:hover {
+        color: $color-white;
+    }
+    .search-category__item_end {
+        text-align: center;
+        margin: 0 1rem 1rem 0;
+        .search-category__item-all {
+            width: 20rem !important;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 1rem 1rem 0;
+            border: 0.1rem solid $color-blue-600;
+            padding: 0.5rem 1.6rem 0.5rem 1.2rem;
+            font-size: 1.3rem;
+            color: $color-white;
+        }
+    }
+    .search-category__item--active {
+        background: $color-blue-600;
+        color: $color-white;
+        border: 0.1rem solid $color-blue-600;
+    }
+}
+
+.training-list__container {
+    padding: 2.4rem 0;
+    border-bottom: 1px solid $color-gray-100;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .training-list__container-left {
+        width: 75%;
+        min-width: 30rem;
+        text-align: left;
+        .training-list__title {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 2.2rem;
+        }
+        .training-list__training-link {
+            color: $color-gray-800;
+        }
+        .training-list__trainer {
+            padding: 1rem 0;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+        }
+        .training-list__category-link {
+            line-height: 0.2rem;
+        }
+    }
+    .training-list__container-right {
+        width: 25%;
+        min-width: 20rem;
+        text-align: right;
+        padding-top: 5rem;
+    }
+}
+
+.training-card {
+    text-align: left;
+    .training-card__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+    .training-card__sectors {
+        padding-top: 1rem;
+    }
+    .training-card__details {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        .training-card__details-txts {
+            width: 70%;
+            .training-card__details-section {
+                padding-bottom: 1rem;
+                .training-card__details-label {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+        .training-card__trainer {
+            width: 30%;
+            min-width: 25rem;
+            padding-left: 10rem;
+            .training-card__trainer-name {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.3rem;
+            }
+        }
+    }
+    .training-card__footer {
+        padding-top: 4rem;
+    }
+}
+
+.trainer-card {
+    text-align: left;
+    .trainer-card__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 3rem;
+    }
+    .trainer-card__fonction {
+        color: $color-gray-500;
+        padding-top: 1rem;
+    }
+    .trainer-card__details {
+        padding-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        .trainer-card__details-txts {
+            width: 70%;
+        }
+        .trainer-card__contacts {
+            width: 30%;
+            min-width: 25rem;
+            padding-left: 10rem;
+            .trainer-card__contact-label {
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2rem;
+                color: $color-blue-600;
+            }
+            .trainer-card__trainer-links {
+                padding-top: 1.2rem;
+            }
+            .trainer-card__trainer-link {
+                color: $color-gray-500;
+                text-decoration: underline;
+            }
+            .contact-icon {
+                margin-right: 1rem;
+            }
+        }
+    }
+    .trainer-card__trainings {
+        padding-top: 6rem;
+        width: 80%;
+        .trainer-card__trainings-label {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 2rem;
+            color: $color-blue-600;
+        }
+        .training-list__container {
+            display: flex;
+            padding: 2rem 0;
+            border-bottom: 1px solid $color-gray-100;
+            .training-list__container-left {
+                width: 90%;
+                .training-list__training-link {
+                    color: $color-gray-800;
+                }
+                .training-list__title {
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 3rem;
+                }
+            }
+            .training-list__container-right {
+                width: 10%;
+                min-width: 10%;
+                vertical-align: top;
+                padding: 0;
+            }
+        }
+    }
+    .trainer-card__footer {
+        padding-top: 4rem;
+    }
+}
+
+.trainer-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2.4rem;
+    .trainer-list__item {
+        width: 23%;
+        min-width: 20rem;
+        margin-bottom: 3%;
+        border: 1px solid $color-gray-100;
+        .trainer-list__item-picture {
+            background: $color-gray-100;
+            width: 100%;
+            min-height: 15rem;
+        }
+        .trainer-icon {
+            width: 10rem;
+            padding-top: 2rem;
+        }
+        .trainer-list__item-info {
+            padding: 2rem;
+            text-align: left;
+            .trainer-list__item-name {
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 1.6rem;
+            }
+            .trainer-list__item-link {
+                color: $color-gray-800;
+            }
+            .trainer-list__item-function {
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+}
+
+.c-pagination {
+    padding: 4rem 0;
+}
+
+.footer {
+    padding-top: 2rem;
+    background: $color-gray-100;
+    .footer-section__title {
+        font-weight: bold;
+    }
+    .footer-section {
+        display: flex;
+        flex-wrap: wrap;
+        .footer-section__item {
+            width: 33%;
+            min-width: 25rem;
+            text-align: left;
+            padding-left: 10%;
+            padding-top: 2rem;
+            .footer-section__title {
+                padding-bottom: 1rem;
+            }
+        }
+        .footer_icons__item {
+            padding-bottom: 1rem;
+        }
+    }
+    .footer-attribution {
+        font-size: 1.1rem;
+        text-align: left;
+        padding: 2rem 1rem 0.5rem;
+        font-weight: normal;
+    }
+}
