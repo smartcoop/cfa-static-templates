@@ -152,6 +152,9 @@
         color: $color-white;
         border: 0.1rem solid $color-blue-600;
     }
+    @media (max-width: $g-bp4){
+        padding: 2rem 5%;
+    }
 }
 
 .training-list__container {
