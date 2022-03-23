@@ -5,8 +5,7 @@
       <?php include 'templates/header.html';?>
 
       <main class="main">
-        <?php include 'templates/main-formations.html';?>
-        <?php include 'templates/components/pager.html';?>
+        <?php include 'templates/main-formations.php';?>
       </main>
 
       <?php include 'templates/footer.html';?>
