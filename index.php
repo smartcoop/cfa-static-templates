@@ -5,7 +5,7 @@
       <?php include 'templates/header.html';?>
 
       <main class="main">
-        <?php include 'templates/main-homepage.html';?>
+        <?php include 'templates/main-homepage.php';?>
       </main>
 
       <?php include 'templates/footer.html';?>

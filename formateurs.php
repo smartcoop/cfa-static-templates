@@ -5,7 +5,7 @@
       <?php include 'templates/header.html';?>
 
       <main class="main c-content"> 
-        <?php include 'templates/main-formateurs.html';?>
+        <?php include 'templates/main-formateurs.php';?>
       </main>
 
       <?php include 'templates/footer.html';?>

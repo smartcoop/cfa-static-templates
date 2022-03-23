@@ -5,7 +5,7 @@
       <?php include 'templates/header.html';?>
 
       <main class="main c-content">
-        <?php include 'templates/main-trainer-card.html';?>
+        <?php include 'templates/main-trainer-card.php';?>
       </main>
 
       <?php include 'templates/footer.html';?>
