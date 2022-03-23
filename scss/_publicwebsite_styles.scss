@@ -51,6 +51,9 @@
                 color: $color-white;
                 display: inline-block;
                 width: auto;
+                @media (max-width: $g-bp2){
+                    display: block;
+                }
             }
             .header-nav__link:hover {
                 border-bottom: 2px solid $color-white;
