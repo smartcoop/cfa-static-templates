@@ -8,6 +8,9 @@
 
 
     <div class="trainer-card__details ">
+        <div class="trainer-card__image">
+            <img src="./images/Julie-Mayer.jpeg" class="trainer-image" />
+        </div>
         <div class="trainer-card__details-txts ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in ullamcorper tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis eget varius nisl, et eleifend est. In condimentum, arcu eget ornare aliquam,
             urna quam luctus quam, ut vestibulum nulla turpis ultricies lectus. Nunc gravida gravida feugiat. Quisque pellentesque libero in massa fringilla, vel gravida ex ultricies. Proin in mi dolor. Fusce mollis neque tellus, vel malesuada nibh malesuada
