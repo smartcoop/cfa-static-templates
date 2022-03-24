@@ -51,6 +51,9 @@
                 color: $color-white;
                 display: inline-block;
                 width: auto;
+                @media (max-width: $g-bp2){
+                    display: block;
+                }
             }
             .header-nav__link:hover {
                 border-bottom: 2px solid $color-white;
@@ -151,6 +154,9 @@
         background: $color-blue-600;
         color: $color-white;
         border: 0.1rem solid $color-blue-600;
+    }
+    @media (max-width: $g-bp4){
+        padding: 2rem 5%;
     }
 }
 
@@ -363,12 +369,22 @@
             text-align: left;
             padding-left: 10%;
             padding-top: 2rem;
+            @media (max-width: $g-bp2){
+                text-align: center;
+                padding: 2rem;
+                margin: auto;
+            }
             .footer-section__title {
                 padding-bottom: 1rem;
             }
         }
         .footer_icons__item {
             padding-bottom: 1rem;
+            @media (max-width: $g-bp2){
+                text-align: center;
+                width:fit-content;
+                margin: auto;
+            }
         }
     }
     .footer-attribution {
@@ -376,5 +392,8 @@
         text-align: left;
         padding: 2rem 1rem 0.5rem;
         font-weight: normal;
+        @media (max-width: $g-bp2){
+            text-align: center;
+        }
     }
 }
