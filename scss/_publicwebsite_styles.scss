@@ -251,8 +251,12 @@
         padding-top: 4rem;
         display: flex;
         flex-wrap: wrap;
+        .trainer-card__image {
+            width: 25%;
+            margin-right: 4%;
+        }
         .trainer-card__details-txts {
-            width: 70%;
+            width: 40%;
         }
         .trainer-card__contacts {
             width: 30%;

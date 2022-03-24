@@ -1157,8 +1157,13 @@ abbr[title] {
       flex-wrap: wrap;
 }
 
+.trainer-card .trainer-card__details .trainer-card__image {
+  width: 25%;
+  margin-right: 4%;
+}
+
 .trainer-card .trainer-card__details .trainer-card__details-txts {
-  width: 70%;
+  width: 40%;
 }
 
 .trainer-card .trainer-card__details .trainer-card__contacts {
