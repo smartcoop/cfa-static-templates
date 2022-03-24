@@ -1,6 +1,6 @@
 <div class="trainer-list__item">
     <div class="trainer-list__item-picture">
-        <a href="nom-du-formateur.php"><img src="./icons/user--blue.svg" class="trainer-icon" /></a>
+        <a href="nom-du-formateur.php"><img src="./icons/user.svg" class="trainer-icon" /></a>
     </div>
     <div class="trainer-list__item-info">
         <div class="trainer-list__item-name">
