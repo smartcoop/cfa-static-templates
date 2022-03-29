@@ -336,6 +336,7 @@
 
 .trainer-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem 2.4rem;
     .trainer-list__item {
