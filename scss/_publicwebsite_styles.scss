@@ -110,17 +110,28 @@
     .search-category__list {
         max-width: 70%;
         margin: 4rem auto;
+        @media (max-width: $g-bp3) {
+            max-width: 100%;
+        }
         .search-category__list-ul {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
+            @media (max-width: $g-bp2) {
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+            }
         }
         .search-category__item {
             margin: 0 1rem 1rem 0;
             border: 0.1rem solid $color-gray-800;
             width: auto;
             text-align: center;
+            @media (max-width: $g-bp2) {
+                margin: auto auto 1rem auto;
+            }
         }
         .search-category__item-link {
             padding: 0.5rem 1.6rem 0.5rem 1.2rem;
@@ -161,14 +172,12 @@
 }
 
 .training-list__container {
+    display: flex;
     padding: 2.4rem 0;
     border-bottom: 1px solid $color-gray-100;
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     .training-list__container-left {
-        width: 75%;
-        min-width: 30rem;
+        width: 90%;
         text-align: left;
         .training-list__title {
             font-size: 2rem;
@@ -188,10 +197,12 @@
         }
     }
     .training-list__container-right {
-        width: 25%;
-        min-width: 20rem;
-        text-align: right;
-        padding-top: 5rem;
+        width: 10%;
+        min-width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -283,6 +294,9 @@
     .trainer-card__trainings {
         padding-top: 6rem;
         width: 80%;
+        @media (max-width: $g-bp3){
+            width: 100%;
+        }
         .trainer-card__trainings-label {
             font-size: 1.6rem;
             font-weight: 700;
@@ -307,8 +321,10 @@
             .training-list__container-right {
                 width: 10%;
                 min-width: 10%;
-                vertical-align: top;
-                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
