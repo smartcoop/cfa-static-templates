@@ -18,9 +18,9 @@
             elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sit amet aliquet ligula, id consequat lectus.
         </div>
         <div class="trainer-card__contacts">
-            <div class="trainer-card__contact-label ">
+            <!--<div class="trainer-card__contact-label ">
                 <img src="./icons/message--blue.svg" class="o-svg-icon--small contact-icon" /> Contactez-moi
-            </div>
+            </div>-->
             <ul>
                 <li class="trainer-card__trainer-links">
                     <a href="#" target="_blank " class="trainer-card__trainer-link "> https://janewong.io</a>

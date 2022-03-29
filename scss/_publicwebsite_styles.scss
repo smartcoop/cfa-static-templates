@@ -51,7 +51,7 @@
                 color: $color-white;
                 display: inline-block;
                 width: auto;
-                @media (max-width: $g-bp2){
+                @media (max-width: $g-bp2) {
                     display: block;
                 }
             }
@@ -166,7 +166,7 @@
         color: $color-white;
         border: 0.1rem solid $color-blue-600;
     }
-    @media (max-width: $g-bp4){
+    @media (max-width: $g-bp4) {
         padding: 2rem 5%;
     }
 }
@@ -265,6 +265,7 @@
         .trainer-card__image {
             width: 25%;
             margin-right: 4%;
+            min-width: 23rem;
         }
         .trainer-card__details-txts {
             width: 40%;
@@ -345,7 +346,8 @@
         .trainer-list__item-picture {
             background: $color-gray-100;
             width: 100%;
-            min-height: 15rem;
+            height: 15rem;
+            overflow: hidden;
         }
         .trainer-icon {
             width: 10rem;
@@ -389,7 +391,7 @@
             text-align: left;
             padding-left: 10%;
             padding-top: 2rem;
-            @media (max-width: $g-bp2){
+            @media (max-width: $g-bp2) {
                 text-align: center;
                 padding: 2rem;
                 margin: auto;
@@ -400,9 +402,9 @@
         }
         .footer_icons__item {
             padding-bottom: 1rem;
-            @media (max-width: $g-bp2){
+            @media (max-width: $g-bp2) {
                 text-align: center;
-                width:fit-content;
+                width: fit-content;
                 margin: auto;
             }
         }
@@ -412,7 +414,7 @@
         text-align: left;
         padding: 2rem 1rem 0.5rem;
         font-weight: normal;
-        @media (max-width: $g-bp2){
+        @media (max-width: $g-bp2) {
             text-align: center;
         }
     }
